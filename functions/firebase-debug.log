@@ -1,50 +1,50 @@
-[debug] [2020-03-26T07:46:57.603Z] ----------------------------------------------------------------------
-[debug] [2020-03-26T07:46:57.605Z] Command:       /home/pacific9/.nvm/versions/node/v12.16.1/bin/node /home/pacific9/.nvm/versions/node/v12.16.1/bin/firebase deploy
-[debug] [2020-03-26T07:46:57.606Z] CLI Version:   7.16.0
-[debug] [2020-03-26T07:46:57.606Z] Platform:      linux
-[debug] [2020-03-26T07:46:57.606Z] Node Version:  v12.16.1
-[debug] [2020-03-26T07:46:57.606Z] Time:          Thu Mar 26 2020 16:46:57 GMT+0900 (Korean Standard Time)
-[debug] [2020-03-26T07:46:57.606Z] ----------------------------------------------------------------------
-[debug] [2020-03-26T07:46:57.606Z] 
-[debug] [2020-03-26T07:46:57.614Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-03-26T07:46:57.614Z] > authorizing via signed-in user
-[debug] [2020-03-26T07:46:57.615Z] [iam] checking project fir-4-c4862 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
-[debug] [2020-03-26T07:46:57.618Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-4-c4862:testIamPermissions  
+[debug] [2020-03-26T08:42:35.479Z] ----------------------------------------------------------------------
+[debug] [2020-03-26T08:42:35.481Z] Command:       /home/pacific9/.nvm/versions/node/v12.16.1/bin/node /home/pacific9/.nvm/versions/node/v12.16.1/bin/firebase deploy
+[debug] [2020-03-26T08:42:35.481Z] CLI Version:   7.16.0
+[debug] [2020-03-26T08:42:35.481Z] Platform:      linux
+[debug] [2020-03-26T08:42:35.481Z] Node Version:  v12.16.1
+[debug] [2020-03-26T08:42:35.482Z] Time:          Thu Mar 26 2020 17:42:35 GMT+0900 (Korean Standard Time)
+[debug] [2020-03-26T08:42:35.482Z] ----------------------------------------------------------------------
+[debug] [2020-03-26T08:42:35.482Z] 
+[debug] [2020-03-26T08:42:35.490Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-26T08:42:35.490Z] > authorizing via signed-in user
+[debug] [2020-03-26T08:42:35.490Z] [iam] checking project fir-4-c4862 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2020-03-26T08:42:35.493Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-4-c4862:testIamPermissions  
 
-[debug] [2020-03-26T07:46:58.799Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:46:58.802Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fir-4-c4862  
+[debug] [2020-03-26T08:42:36.130Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:36.132Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fir-4-c4862  
  
-[debug] [2020-03-26T07:46:59.611Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:36.779Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Deploying to 'fir-4-c4862'...
 [info] 
 [info] i  deploying database, storage, firestore, functions, hosting
 [info] i  database: checking rules syntax...
-[debug] [2020-03-26T07:47:01.977Z] >>> HTTP REQUEST PUT https://fir-4-c4862.firebaseio.com/.settings/rules.json?dryRun=true  
+[debug] [2020-03-26T08:42:39.127Z] >>> HTTP REQUEST PUT https://fir-4-c4862.firebaseio.com/.settings/rules.json?dryRun=true  
  {
   "rules": {
     ".read": true,
     ".write": true
   }
 }
-[debug] [2020-03-26T07:47:02.798Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:39.956Z] <<< HTTP RESPONSE 200
 [info] ✔  database: rules syntax for database fir-4-c4862 is valid
-[debug] [2020-03-26T07:47:02.800Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/fir-4-c4862  
+[debug] [2020-03-26T08:42:39.959Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/fir-4-c4862  
  
-[debug] [2020-03-26T07:47:04.361Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:40.768Z] <<< HTTP RESPONSE 200
 [info] i  firebase.storage: checking storage.rules for compilation errors...
-[debug] [2020-03-26T07:47:04.365Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/fir-4-c4862:test  
+[debug] [2020-03-26T08:42:40.772Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/fir-4-c4862:test  
 
-[debug] [2020-03-26T07:47:04.890Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:42.200Z] <<< HTTP RESPONSE 200
 [warn] ⚠  [W] undefined:undefined - Ruleset uses old version (version [1]). Please update to the latest version (version [2]).
 [info] ✔  firebase.storage: rules file storage.rules compiled successfully
 [info] i  firestore: reading indexes from firestore.indexes.json...
 [info] i  cloud.firestore: checking firestore.rules for compilation errors...
-[debug] [2020-03-26T07:47:04.896Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/fir-4-c4862:test  
+[debug] [2020-03-26T08:42:42.206Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/fir-4-c4862:test  
 
-[debug] [2020-03-26T07:47:06.243Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:43.590Z] <<< HTTP RESPONSE 200
 [info] ✔  cloud.firestore: rules file firestore.rules compiled successfully
-[debug] [2020-03-26T07:47:06.247Z] > [functions] package.json contents: {
+[debug] [2020-03-26T08:42:43.594Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
@@ -79,168 +79,123 @@
   "private": true
 }
 [info] i  functions: ensuring necessary APIs are enabled...
-[debug] [2020-03-26T07:47:06.250Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/fir-4-c4862/services/cloudfunctions.googleapis.com  
+[debug] [2020-03-26T08:42:43.597Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/fir-4-c4862/services/cloudfunctions.googleapis.com  
  
-[debug] [2020-03-26T07:47:06.251Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/fir-4-c4862/services/runtimeconfig.googleapis.com  
+[debug] [2020-03-26T08:42:43.598Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/fir-4-c4862/services/runtimeconfig.googleapis.com  
  
-[debug] [2020-03-26T07:47:06.737Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:07.732Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:44.834Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:44.881Z] <<< HTTP RESPONSE 200
 [info] ✔  functions: all necessary APIs are enabled
-[debug] [2020-03-26T07:47:07.733Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fir-4-c4862/adminSdkConfig  
+[debug] [2020-03-26T08:42:44.883Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fir-4-c4862/adminSdkConfig  
  
-[debug] [2020-03-26T07:47:08.542Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:08.545Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/fir-4-c4862/versions  
+[debug] [2020-03-26T08:42:45.350Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:45.353Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/fir-4-c4862/versions  
 
-[debug] [2020-03-26T07:47:10.150Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:10.154Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/fir-4-c4862/releases?pageSize=10&pageToken=  
+[debug] [2020-03-26T08:42:46.832Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:46.837Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/fir-4-c4862/releases?pageSize=10&pageToken=  
  
-[debug] [2020-03-26T07:47:11.656Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:11.658Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/fir-4-c4862/rulesets/3fefd4ee-9a38-4815-b7b8-cdcc775929c4  
+[debug] [2020-03-26T08:42:47.272Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:47.275Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/fir-4-c4862/rulesets/3fefd4ee-9a38-4815-b7b8-cdcc775929c4  
  
-[debug] [2020-03-26T07:47:12.938Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:48.645Z] <<< HTTP RESPONSE 200
 [info] i  storage: latest version of storage.rules already up to date, skipping upload...
-[debug] [2020-03-26T07:47:12.942Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/fir-4-c4862/releases?pageSize=10&pageToken=  
+[debug] [2020-03-26T08:42:48.651Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/fir-4-c4862/releases?pageSize=10&pageToken=  
  
-[debug] [2020-03-26T07:47:12.942Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta2/projects/fir-4-c4862/databases/(default)/collectionGroups/-/indexes  
+[debug] [2020-03-26T08:42:48.651Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta2/projects/fir-4-c4862/databases/(default)/collectionGroups/-/indexes  
  
-[debug] [2020-03-26T07:47:13.506Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:13.508Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta2/projects/fir-4-c4862/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+[debug] [2020-03-26T08:42:49.344Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:49.346Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta2/projects/fir-4-c4862/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
  
-[debug] [2020-03-26T07:47:14.033Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:49.930Z] <<< HTTP RESPONSE 200
 [info] ✔  firestore: deployed indexes in firestore.indexes.json successfully
-[debug] [2020-03-26T07:47:14.300Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:14.301Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/fir-4-c4862/rulesets/6b4b1c00-c21b-4fbd-aafe-1b0ad2c26ab0  
+[debug] [2020-03-26T08:42:50.015Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:50.017Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/fir-4-c4862/rulesets/6b4b1c00-c21b-4fbd-aafe-1b0ad2c26ab0  
  
-[debug] [2020-03-26T07:47:15.594Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:51.379Z] <<< HTTP RESPONSE 200
 [info] i  firestore: latest version of firestore.rules already up to date, skipping upload...
 [info] i  functions: preparing functions directory for uploading...
-[debug] [2020-03-26T07:47:15.600Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/fir-4-c4862/configs  
+[debug] [2020-03-26T08:42:51.385Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/fir-4-c4862/configs  
  
-[debug] [2020-03-26T07:47:16.082Z] <<< HTTP RESPONSE 200
-[info] i  functions: packaged functions (79.1 KB) for uploading
-[debug] [2020-03-26T07:47:16.489Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/fir-4-c4862/locations/us-central1/functions:generateUploadUrl  
+[debug] [2020-03-26T08:42:51.884Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (79.31 KB) for uploading
+[debug] [2020-03-26T08:42:52.286Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/fir-4-c4862/locations/us-central1/functions:generateUploadUrl  
  
-[debug] [2020-03-26T07:47:17.722Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:17.724Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-aa9613c7-8638-4ff3-882a-72eb85f13afa/b1800079-532e-46c2-9568-5988c909649f.zip?GoogleAccessId=service-700177549684@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585210637&Signature=o0UVD1tmU1BnSvEIFo%2FjxFeKz5bGLlTdvTfgfMOPtX7YO2l78uxY6RVGVR2PRvEvZ2OUEzo8rE%2FnhiDJLFZT8YMi5xuq51eD%2BbCFb6DDmS62dPYPhNIsrR0LoQEN6HIjqX%2F%2Fmaiq1oYDlp2WT6P0Mg4UPnZMyCiosZ3r3YO%2FJ9UeDS9faj5VPSGDMS2I5Xamebi2u0loDV6X1%2BCctGc%2B25D6MiPXt8qIMdmmkcc5W6zQ9B5mSeRUM0gj1QWHxo7imx04HH%2Ff1yCmGjZ1760H3YbEezqYLbs6aTELlTgVsZ3u0QxfPqcO2FpQlycte9CLfdSoxq12iYn%2BSykJo25Whw%3D%3D  
+[debug] [2020-03-26T08:42:53.154Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:53.156Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-aa9613c7-8638-4ff3-882a-72eb85f13afa/bacdcb5f-18e5-4b70-87cc-5cdcacb14eca.zip?GoogleAccessId=service-700177549684@gcf-admin-robot.iam.gserviceaccount.com&Expires=1585213972&Signature=zxTcm6z7ZQ6VYXbGjrPhVGjWnJv57PSVh1lbGYotEjVR8saLLWWT0faSyWE0gWhM7v3TqobKCwBYbYfLA9KfEk9Zbeizxv1o0ImsF7oVwur5rTz3TUO7inHm5NahXqPM92AQ8JJak0PrFWGA%2FbllGHxOxoelChI90CpJvJKo14N0zbHs9WnvJRQFcu1jPqV1n95cN8QrPOpPtl19R3hREB%2FMk4iyBA2IVfVYOyjncx6FV0GNv%2FvY6bBjJuEd9EQ9B1NT%2FYraJfAZWSrpwNXNZvfo7sjWrBVAKljAQcoDdYqrGrlq0XRTwZfarblJ3hE4a5Nd0PepFDS%2BgoI1t97C5A%3D%3D  
  <request body omitted>
-[debug] [2020-03-26T07:47:18.246Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:54.018Z] <<< HTTP RESPONSE 200
 [info] ✔  functions: functions folder uploaded successfully
 [info] i  hosting[fir-4-c4862]: beginning deploy...
 [info] i  hosting[fir-4-c4862]: found 2 files in public
-[debug] [2020-03-26T07:47:18.260Z] [hosting] hash cache [cHVibGlj] stored for 2 files
-[debug] [2020-03-26T07:47:18.260Z] [hosting][hash queue][FINAL]
-[debug] [2020-03-26T07:47:18.261Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/fir-4-c4862/versions/e9024e7f7d3709fb:populateFiles  
+[debug] [2020-03-26T08:42:54.034Z] [hosting] hash cache [cHVibGlj] stored for 2 files
+[debug] [2020-03-26T08:42:54.034Z] [hosting][hash queue][FINAL]
+[debug] [2020-03-26T08:42:54.034Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/fir-4-c4862/versions/b4fe2fe9bf200004:populateFiles  
  <request body omitted>
-[debug] [2020-03-26T07:47:19.539Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:19.540Z] [hosting][populate queue][FINAL]
-[debug] [2020-03-26T07:47:19.540Z] [hosting] uploads queued: 0
-[debug] [2020-03-26T07:47:19.540Z] [hosting][upload queue][FINAL]
+[debug] [2020-03-26T08:42:55.386Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:55.388Z] [hosting][populate queue][FINAL]
+[debug] [2020-03-26T08:42:55.388Z] [hosting] uploads queued: 0
+[debug] [2020-03-26T08:42:55.388Z] [hosting][upload queue][FINAL]
 [info] ✔  hosting[fir-4-c4862]: file upload complete
-[debug] [2020-03-26T07:47:19.541Z] [hosting] deploy completed after 1293ms
+[debug] [2020-03-26T08:42:55.389Z] [hosting] deploy completed after 1369ms
 [info] i  database: releasing rules...
-[debug] [2020-03-26T07:47:19.763Z] >>> HTTP REQUEST PUT https://fir-4-c4862.firebaseio.com/.settings/rules.json  
+[debug] [2020-03-26T08:42:55.616Z] >>> HTTP REQUEST PUT https://fir-4-c4862.firebaseio.com/.settings/rules.json  
  {
   "rules": {
     ".read": true,
     ".write": true
   }
 }
-[debug] [2020-03-26T07:47:20.552Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:56.545Z] <<< HTTP RESPONSE 200
 [info] ✔  database: rules for database fir-4-c4862 released successfully
-[debug] [2020-03-26T07:47:20.554Z] [rules] releasing firebase.storage/fir-4-c4862.appspot.com with ruleset projects/fir-4-c4862/rulesets/3fefd4ee-9a38-4815-b7b8-cdcc775929c4
-[debug] [2020-03-26T07:47:20.555Z] >>> HTTP REQUEST PATCH https://firebaserules.googleapis.com/v1/projects/fir-4-c4862/releases/firebase.storage/fir-4-c4862.appspot.com  
+[debug] [2020-03-26T08:42:56.548Z] [rules] releasing firebase.storage/fir-4-c4862.appspot.com with ruleset projects/fir-4-c4862/rulesets/3fefd4ee-9a38-4815-b7b8-cdcc775929c4
+[debug] [2020-03-26T08:42:56.549Z] >>> HTTP REQUEST PATCH https://firebaserules.googleapis.com/v1/projects/fir-4-c4862/releases/firebase.storage/fir-4-c4862.appspot.com  
 
-[debug] [2020-03-26T07:47:21.882Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:21.883Z] [rules] updated release projects/fir-4-c4862/releases/firebase.storage/fir-4-c4862.appspot.com
+[debug] [2020-03-26T08:42:57.940Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:57.941Z] [rules] updated release projects/fir-4-c4862/releases/firebase.storage/fir-4-c4862.appspot.com
 [info] ✔  storage: released rules storage.rules to firebase.storage
-[debug] [2020-03-26T07:47:21.884Z] [rules] releasing cloud.firestore with ruleset projects/fir-4-c4862/rulesets/6b4b1c00-c21b-4fbd-aafe-1b0ad2c26ab0
-[debug] [2020-03-26T07:47:21.885Z] >>> HTTP REQUEST PATCH https://firebaserules.googleapis.com/v1/projects/fir-4-c4862/releases/cloud.firestore  
+[debug] [2020-03-26T08:42:57.942Z] [rules] releasing cloud.firestore with ruleset projects/fir-4-c4862/rulesets/6b4b1c00-c21b-4fbd-aafe-1b0ad2c26ab0
+[debug] [2020-03-26T08:42:57.943Z] >>> HTTP REQUEST PATCH https://firebaserules.googleapis.com/v1/projects/fir-4-c4862/releases/cloud.firestore  
 
-[debug] [2020-03-26T07:47:23.216Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:23.217Z] [rules] updated release projects/fir-4-c4862/releases/cloud.firestore
+[debug] [2020-03-26T08:42:59.337Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:42:59.338Z] [rules] updated release projects/fir-4-c4862/releases/cloud.firestore
 [info] ✔  firestore: released rules firestore.rules to cloud.firestore
-[debug] [2020-03-26T07:47:23.218Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/fir-4-c4862/locations/-/functions  
+[debug] [2020-03-26T08:42:59.340Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/fir-4-c4862/locations/-/functions  
  
-[debug] [2020-03-26T07:47:23.837Z] <<< HTTP RESPONSE 200
-[info] i  functions: creating Node.js 8 function api(us-central1)...
-[debug] [2020-03-26T07:47:23.842Z] Trigger is:  {"httpsTrigger":{}}
-[info] 
-The following functions are found in your project but do not exist in your local source code:
-	app(us-central1)
+[debug] [2020-03-26T08:42:59.922Z] <<< HTTP RESPONSE 200
+[info] i  functions: updating Node.js 8 function api(us-central1)...
+[debug] [2020-03-26T08:42:59.927Z] Trigger is:  {"httpsTrigger":{}}
+[debug] [2020-03-26T08:42:59.929Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/fir-4-c4862/services/cloudscheduler.googleapis.com  
+ 
+[debug] [2020-03-26T08:43:01.107Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:43:01.110Z] >>> HTTP REQUEST PATCH https://cloudfunctions.googleapis.com/v1/projects/fir-4-c4862/locations/us-central1/functions/api {"updateMask":"sourceUploadUrl,name,labels,runtime,httpsTrigger"} 
 
-If you are renaming a function or changing its region, it is recommended that you create the new function first before deleting the old one to prevent event loss. For more info, visit https://firebase.google.com/docs/functions/manage-functions#modify
-
-[info] i  functions: deleting function app(us-central1)...
-[debug] [2020-03-26T07:47:39.500Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/fir-4-c4862/services/cloudscheduler.googleapis.com  
+[debug] [2020-03-26T08:43:01.818Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:43:01.821Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/fir-4-c4862/locations/-/functions  
  
-[debug] [2020-03-26T07:47:40.900Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:40.903Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/fir-4-c4862/locations/us-central1/functions  
-
-[debug] [2020-03-26T07:47:40.904Z] >>> HTTP REQUEST DELETE https://cloudfunctions.googleapis.com/v1/projects/fir-4-c4862/locations/us-central1/functions/app  
+[debug] [2020-03-26T08:43:02.420Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:43:02.423Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL2JxQmFpQXBoaWdV  
  
-[debug] [2020-03-26T07:47:41.542Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:41.573Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:41.574Z] Setting public policy for function api
-[debug] [2020-03-26T07:47:41.575Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/fir-4-c4862/locations/us-central1/functions/api:setIamPolicy  
-
-[debug] [2020-03-26T07:47:42.137Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:42.139Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/fir-4-c4862/locations/-/functions  
+[debug] [2020-03-26T08:43:02.938Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:43:04.940Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL2JxQmFpQXBoaWdV  
  
-[debug] [2020-03-26T07:47:42.801Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:42.803Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL04yNkFVR1UtaXVj  
+[debug] [2020-03-26T08:43:05.376Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:43:07.378Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL2JxQmFpQXBoaWdV  
  
-[debug] [2020-03-26T07:47:42.805Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBwL2p3NHBEbVRSYU9V  
+[debug] [2020-03-26T08:43:07.854Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:43:09.858Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL2JxQmFpQXBoaWdV  
  
-[debug] [2020-03-26T07:47:43.292Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:43.294Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:45.296Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL04yNkFVR1UtaXVj  
+[debug] [2020-03-26T08:43:10.379Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:43:12.383Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL2JxQmFpQXBoaWdV  
  
-[debug] [2020-03-26T07:47:45.297Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBwL2p3NHBEbVRSYU9V  
+[debug] [2020-03-26T08:43:12.973Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:43:14.977Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL2JxQmFpQXBoaWdV  
  
-[debug] [2020-03-26T07:47:45.714Z] <<< HTTP RESPONSE 200
-[info] ✔  functions[app(us-central1)]: Successful delete operation. 
-[debug] [2020-03-26T07:47:45.721Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:47.724Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL04yNkFVR1UtaXVj  
+[debug] [2020-03-26T08:43:15.479Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:43:17.489Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL2JxQmFpQXBoaWdV  
  
-[debug] [2020-03-26T07:47:48.204Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:50.206Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL04yNkFVR1UtaXVj  
+[debug] [2020-03-26T08:43:18.005Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:43:20.008Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL2JxQmFpQXBoaWdV  
  
-[debug] [2020-03-26T07:47:50.656Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:52.660Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL04yNkFVR1UtaXVj  
- 
-[debug] [2020-03-26T07:47:53.148Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:55.152Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL04yNkFVR1UtaXVj  
- 
-[debug] [2020-03-26T07:47:55.555Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:57.556Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL04yNkFVR1UtaXVj  
- 
-[debug] [2020-03-26T07:47:57.963Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:47:59.967Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL04yNkFVR1UtaXVj  
- 
-[debug] [2020-03-26T07:48:00.397Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:48:02.401Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL04yNkFVR1UtaXVj  
- 
-[debug] [2020-03-26T07:48:02.825Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:48:04.829Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL04yNkFVR1UtaXVj  
- 
-[debug] [2020-03-26T07:48:07.182Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:48:09.184Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL04yNkFVR1UtaXVj  
- 
-[debug] [2020-03-26T07:48:09.632Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:48:11.634Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL04yNkFVR1UtaXVj  
- 
-[debug] [2020-03-26T07:48:12.094Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:48:14.096Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL04yNkFVR1UtaXVj  
- 
-[debug] [2020-03-26T07:48:14.491Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:48:16.492Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL04yNkFVR1UtaXVj  
- 
-[debug] [2020-03-26T07:48:16.880Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:48:18.883Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL04yNkFVR1UtaXVj  
- 
-[debug] [2020-03-26T07:48:19.281Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:48:21.284Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL04yNkFVR1UtaXVj  
- 
-[debug] [2020-03-26T07:48:21.690Z] <<< HTTP RESPONSE 200
-[debug] [2020-03-26T07:48:23.694Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL04yNkFVR1UtaXVj  
+[debug] [2020-03-26T08:43:20.477Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-26T08:43:22.481Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/operations/ZmlyLTQtYzQ4NjIvdXMtY2VudHJhbDEvYXBpL2JxQmFpQXBoaWdV  
  

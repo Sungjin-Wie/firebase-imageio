@@ -9,7 +9,7 @@ const fs = require("fs");
 const Busboy = require("busboy");
 const stream = require("stream");
 
-var serviceAccount = require("../auth.json");
+var serviceAccount = require("./auth.json");
 
 const firebaseAdmin = admin.initializeApp(
   {
@@ -38,48 +38,48 @@ router.post("/photo", function(req, res, next) {
     const filepath = path.join(os.tmpdir(), filename);
     uploads[filename] = { file: filepath };
     console.log(`Saving '${filename}' to ${filepath}`);
-    imageTobeUploaded = {filepath, mimetype};
+    imageTobeUploaded = { filepath, mimetype };
     file.pipe(fs.createWriteStream(filepath));
   });
 
-  busboy.on('finish', () => {
-    admin.storage().bucket().upload(imageTobeUploaded.filepath, {
+  busboy.on("finish", () => {
+    admin
+      .storage()
+      .bucket()
+      .upload(imageTobeUploaded.filepath, {
         resumable: false,
-        metadata:{
-            metadata:{
-                contentType:imageTobeUploaded.mimeType
-            }
+        metadata: {
+          metadata: {
+            contentType: imageTobeUploaded.mimeType
+          }
         }
-    })
-    // .then( () => {
-    //     // const imageUrl = `https://firebasestorage.googleapis.com/v0/b/${firebaseAdmin.storageBucket}/o/${filename}?alt=media`
-    //    // return db.doc(`/users/${req.user.handle}`).update({imageUrl});
-    // })
-    .then( () => {
-        return res.json({message: "Image Uploaded Successfully"});
-    })
-    .catch(err => {
+      })
+      .then(() => {
+        return res.render("photo");
+      })
+      .catch(err => {
         console.error(err);
-        return res.status(400).json({ error : err.code});
-    })
-});
-  //   router.get("/download", function(req, res, next) {
-  //     var imgName = req.query.imgName;
-  //     var file = firebaseAdmin
-  //       .storage()
-  //       .bucket()
-  //       .file(imgName);
-  //     const config = { action: "read", expires: "03-17-2030" };
-  //     file.getSignedUrl(config, (err, url) => {
-  //       if (err) {
-  //         console.log(err);
-  //       }
-  //       console.log(url);
-  //       res.render("download", { image: url });
-  //       return;
-  //     });
-  //   });
+        return res.status(400).json({ error: err.code });
+      });
+  });
   busboy.end(req.rawBody);
+});
+
+router.get("/download", function(req, res, next) {
+  var imgName = req.query.imgName;
+  var file = firebaseAdmin
+    .storage()
+    .bucket()
+    .file(imgName);
+  const config = { action: "read", expires: "03-17-2030" };
+  file.getSignedUrl(config, (err, url) => {
+    if (err) {
+      console.log(err);
+    }
+    console.log(url);
+    res.render("download", { image: url });
+    return;
+  });
 });
 
 module.exports = router;
