@@ -2,12 +2,10 @@ var express = require("express");
 var router = express.Router();
 
 const admin = require("firebase-admin");
-const dateFormat = require("dateformat");
 const path = require("path");
 const os = require("os");
 const fs = require("fs");
 const Busboy = require("busboy");
-const stream = require("stream");
 
 var serviceAccount = require("./auth.json");
 
@@ -67,6 +65,7 @@ router.post("/photo", function(req, res, next) {
 
 router.get("/download", function(req, res, next) {
   var imgName = req.query.imgName;
+  console.log(req.originalUrl)
   var file = firebaseAdmin
     .storage()
     .bucket()
