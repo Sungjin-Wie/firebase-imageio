@@ -18,6 +18,10 @@ const firebaseAdmin = admin.initializeApp(
   "storage"
 );
 
+router.get("/", (req, res, next) => {
+  res.redirect("/upload");
+})
+
 router.get("/upload", (req, res, next) => {
   res.render("upload");
   console.log("upload page with busboy");
@@ -28,7 +32,7 @@ router.post("/photo", function(req, res, next) {
   const busboy = new Busboy({ headers: req.headers });
 
   let uploads = {};
-
+  let downloadURL = "https://fir-4-c4862.firebaseapp.com/download?imgName=";
   busboy.on("file", (fieldname, file, filename, encoding, mimetype) => {
     console.log(
       `File [${fieldname}] filename: ${filename}, encoding: ${encoding}, mimetype: ${mimetype}`
@@ -37,6 +41,7 @@ router.post("/photo", function(req, res, next) {
     uploads[filename] = { file: filepath };
     console.log(`Saving '${filename}' to ${filepath}`);
     imageTobeUploaded = { filepath, mimetype };
+    downloadURL = downloadURL + filename;
     file.pipe(fs.createWriteStream(filepath));
   });
 
@@ -48,12 +53,12 @@ router.post("/photo", function(req, res, next) {
         resumable: false,
         metadata: {
           metadata: {
-            contentType: imageTobeUploaded.mimeType
+            contentType: imageTobeUploaded.mimetype
           }
         }
       })
       .then(() => {
-        return res.render("photo");
+        return res.render("photo", { link: downloadURL });
       })
       .catch(err => {
         console.error(err);
@@ -65,7 +70,6 @@ router.post("/photo", function(req, res, next) {
 
 router.get("/download", function(req, res, next) {
   var imgName = req.query.imgName;
-  console.log(req.originalUrl)
   var file = firebaseAdmin
     .storage()
     .bucket()
